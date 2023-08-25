@@ -18,7 +18,7 @@ server.get('/api/heartbeat', (req, res) => {
 
 // delegate client-side routing to the client
 server.get('*', (req, res) => {
-  res.sendFile(path.resolve(`${__dirname}/public/index.html')`));
+  res.sendFile(path.resolve(`${__dirname}/public/index.html)`));
 });
 
 server.listen(process.env.PORT || PORT, () => {
